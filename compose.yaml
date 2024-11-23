@@ -12,3 +12,7 @@ services:
 
   gotenberg:
     image: gotenberg/gotenberg:8
+    command: 
+      - "gotenberg"
+      - "--api-timeout=90s"
+      - "--libreoffice-auto-start"
